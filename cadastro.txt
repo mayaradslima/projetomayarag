@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Formulário</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+        font-family: sans-serif;
+    }
+    body{
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-color: darkslateblue;
+        background-attachment: fixed;
+        background-image:url("https://cdn.pixabay.com/photo/2020/02/05/08/46/background-4820448_960_720.jpg")
+    }
+    .form{
+        background: #ebc7f7;
+        width: 70%;
+        height: 100%;
+        margin:auto;
+        text-align:center;
+        border: 2px rgb(174, 127, 197);
+        border-radius: 10px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        }
+    h1{
+        background:rgb(211, 152, 235)
+    }
+    input,select{
+        border-radius: 5px;
+        height: 25px;
+        border: none;
+    }
+    input[type="submit"]{
+        cursor: pointer;
+        border-radius: 2px;
+        border: none;
+        width: 88px;
+        height: 35px;
+    }
+    input[type="button"]{
+        cursor: pointer;
+        border-radius: 2px;
+        border: none;
+        width: 88px;
+        height: 35px;
+    }
+    input[type="submit"]:hover{
+        background: #069;
+        color: #fff;
+    }
+    input[type="submit"]:hover{
+        background: #069;
+        color: #fff;
+    }
+
+</style>
+<body>
+<div class="form">
+    <form method="POST" action="index.php"><br>
+        <h1>Formulário para Candidatura</h1> <br>
+        <h2>Dados Pessoais</h2><br>
+            <label for="nome">Nome Completo*</label>
+                <input type="text" size="40">
+                &ensp;&ensp;
+            <label for="Cargo Pretendido">Cargo Pretendido</label>
+                <input type="text"><br><br>
+            <label for="Data de Nascimento">Data de Nascimento*</label>           
+            <input id="date" type="date"> 
+            &ensp;    &ensp;       
+            <label for="Estado Civil">Estado Civil</label>
+                <select name="Estado Civil" id="Estado Civil>
+                    <option value="0">Escolha<option>
+                    <option value="1">Solteiro</option>
+                    <option value="2">Casado</option>
+                    <option value="3">Divorciado</option>
+                </select>  
+                &ensp;&ensp;         
+            <label for="sexo">Sexo</label>
+                <select name="Sexo" id="sexo>
+                    <option value="0">Escolha<option>
+                    <option value="1">Femino</option>
+                    <option value="2">Masculino</option>
+                </select>
+            <br> <br>
+            <label for="endereço">Endereço*</label> 
+                <input type="text" size="50" placeholder="&ensp;ex. Nome da Rua, 56. Bloco 2, AP 301">
+            <br> <br>
+            <label for="bairro">Bairro*</label>
+                <input type="text" size="35">
+            &ensp;&ensp;  
+            <label for="cidade">Cidade*</label>
+                <input type="text" size="35">
+            <br> <br>
+            <label for="Cep">Cep</label>
+                <input type="text" size="20">
+            &ensp;&ensp;  
+            <label for="telefone1">Telefone Fixo 1</label>
+                <input type="text" size="20">
+            &ensp;&ensp;  
+            <label for="telefone2">Telefone Fixo 2</label>
+                <input type="text" size="20">
+            <br> <br>
+            <label for="celular">Celular</label>
+                <input type="text" size="20">
+            &ensp;&ensp;                      
+            <label for="Contato">Contato</label>
+                <input type="text" size="22">
+            &ensp;&ensp;  
+            <label for="email">Email</label>
+                <input type="text" size="30"placeholder="&ensp;ex: myname@example.com">
+            <br><br>
+
+        <h2>Documentos</h2><br>
+            <label for="identidade">Identidade*</label>
+                <input type="text" size="15">
+            &ensp;&ensp; 
+            <label for="cpf">CPF*</label>
+                <input type="text" size="25">
+            &ensp;&ensp; 
+            <label for="possui veículo">Possui Veículo</label>
+                <select name="Possui veículo" id="Possui Veículo>
+                    <option value="0">Escolha<option>
+                    <option value="1">Sim</option>
+                    <option value="2">Não</option>
+                </select>
+            &ensp;&ensp; 
+            <label for="Habilitação">Habilitação</label>
+                <select name="Habilitação" id="Habilitação>
+                    <option value="0">Escolha<option>
+                    <option value="1">Sim</option>
+                    <option value="2">Não</option>
+                </select>
+                <br> <br>
+</form>
+</div>
+</body>
+</html>
